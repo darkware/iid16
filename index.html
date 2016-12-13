@@ -16,7 +16,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/mdb.css" rel="stylesheet">
 
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
@@ -33,17 +33,17 @@
         </div>
         <div class="col-md-8">
             <form class="form-inline float-md-right">
-
+              
                 <div class="md-form form-group">
-                    <i class="fa fa-envelope prefix"></i>
-                    <input type="email" id="form91" class="form-control validate">
-                    <label for="form91" data-error="wrong" data-success="right">Type your email</label>
+                    <!--<i class="fa fa-envelope prefix"></i>-->
+                    <input type="email" id="logmail" class="form-control" placeholder="">
+                    <label for="logmail">Email</label>
                 </div>
 
                 <div class="md-form form-group">
-                    <i class="fa fa-lock prefix"></i>
-                    <input type="password" id="form92" class="form-control validate">
-                    <label for="form92" data-error="wrong" data-success="right">Type your password</label>
+                    <!--<i class="fa fa-lock prefix"></i>-->
+                    <input type="password" id="logpwd" class="form-control" placeholder="">
+                    <label for="logpwd">Password</label>
                 </div>
 
                 <div class="md-form form-group">
@@ -56,52 +56,58 @@
 
     <div class="container-fluid top30">
         <div class="col-md-6">
-              <p class="lead">Share food with your neighbours</p>
-              <hr class="my-2">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <p class="lead">
-                  <a class="btn btn-primary btn-lg" role="button">Learn more</a>
-              </p>
+            <p class="lead">Share food with your neighbours</p>
+            <hr class="my-2">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" role="button">Learn more</a>
+            </p>
         </div>
 
         <div class="col-md-6">
 
             <div class="card">
-                <h3 class="card-header primary-color white-text">Sign Up</h3>
+                <h3 class="card-header special-color-dark white-text">Sign Up</h3>
                 <div class="card-block">
 
                     <!--Name-->
-                    <div class="md-form">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="regname" class="form-control validate">
-                        <label for="regname" data-error="wrong" data-success="right">Name</label>
+                    <div class="md-form top7">
+                        <!--<i class="fa fa-user prefix"></i>-->
+                        <input type="text" id="regname" class="form-control">
+                        <label for="regname">Name</label>
                     </div>
 
                     <!--Address-->
-                    <div class="md-form">
-                        <i class="fa fa-home prefix"></i>
-                        <input type="text" id="regname" class="form-control validate">
-                        <label for="regname" data-error="wrong" data-success="right">Address</label>
+                    <div class="md-form top7">
+                        <!--<i class="fa fa-home"></i>-->
+                        <input type="text" id="regaddress" class="form-control">
+                        <label for="regaddress">Address</label>
                     </div>
 
                     <!--Email validation-->
                     <div class="md-form">
-                        <i class="fa fa-envelope prefix"></i>
-                        <input type="email" id="regmail" class="form-control validate">
-                        <label for="regmail" data-error="wrong" data-success="right">Email</label>
+                        <!--<i class="fa fa-envelope prefix"></i>-->
+                        <input type="email" id="regmail" class="form-control">
+                        <label for="regmail">Email</label>
                     </div>
 
-                    <!--Password validation-->
-                    <div class="md-form">
-                        <i class="fa fa-lock prefix"></i>
-                        <input type="password" id="regpass1" class="form-control validate">
-                        <label for="regpass1" data-error="wrong" data-success="right">Password</label>
-                    </div>
-                    <!--Password validation-->
-                    <div class="md-form">
-                        <i class="fa fa-lock prefix"></i>
-                        <input type="password" id="regpass2" class="form-control validate">
-                        <label for="regpass2" data-error="wrong" data-success="right">Confirm Password</label>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <!--Password validation-->
+                        <div class="md-form form-group top7">
+                            <!--<i class="fa fa-lock prefix"></i>-->
+                            <input type="password" id="regpass1" class="form-control">
+                            <label for="regpass1">Password</label>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <!--Password validation-->
+                        <div class="md-form form-group top7">
+                            <!--<i class="fa fa-lock prefix"></i>-->
+                            <input type="password" id="regpass2" class="form-control">
+                            <label for="regpass2">Confirm Password</label>
+                        </div>
+                        </div>
                     </div>
 
                     <a class="btn btn-primary" href="nogroup.html">Sign Up</a>
