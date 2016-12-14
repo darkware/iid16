@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Material Design Bootstrap</title>
+    <title>FoodShare | Groups</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -25,17 +25,255 @@
 
 <body>
 
+    <!-- COPY OF Navbar-->
+    <nav class="navbar navbar-fixed-top navbar-light white">
+
+        <!--Navbar Brand-->
+        <a href="main.html" class="navbar-brand">FoodShare</a>
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+
+                <!--Search form-->
+                <form class="form-inline float-xs-left" action="search.html">
+                  <input type="search" class="form-control" placeholder="Search...">
+                    <!--<input class="form-control" type="text" placeholder="Search...">
+                    <input class="form-control fa fa-search" type="submit" value="">-->
+                    <!--<button class="btn btn-primary btn-sm" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>-->
+                </form>
+
+                <!--Links-->
+                <ul class="nav navbar-nav navbar-right float-xs-right">
+                    <li class="nav-item">
+                        <a href="messages.html" class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a href="profile.html" class="dropdown-item"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                            <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
 
     <!-- Start your project here-->
 
-    <div style="height: 100vh">
-        <div class="flex-center">
-            <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
+    <div class="container-fluid top100">
+      <div class="row">
+
+        <!-- Join Group -->
+        <div class="col-md-4 offset-md-2">
+          <div class="card">
+              <h3 class="card-header special-color-dark white-text">Join Group</h3>
+              <div class="card-block">
+                <p class="lead">Groups in your neighborhood</p>
+
+                <div class="list-group">
+
+                  <!-- Group item -->
+                  <div class="view hm-zoom">
+                    <a href="" data-toggle="modal" data-target="#myModal">
+                      <div class="list-group-item">
+                        <div class="row">
+
+                          <div class="col-xl-6">
+                            <h3>BestFood</h3>
+                            <p>Paniglgasse 5</p>
+                            <p>
+                              <span class="tag bg-primary label-pill">14</span>
+                              <span>members</span>
+                            </p>
+                          </div>
+
+                          <div class="col-xl-6">
+                            <img src="img/groups/group_01.jpg" class="img-fluid z-depth-2">
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Group item -->
+                  <div class="view hm-zoom">
+                    <a href="" data-toggle="modal" data-target="#myModal">
+                      <div class="list-group-item">
+                        <div class="row">
+
+                          <div class="col-xl-6">
+                            <h3>Noname group</h3>
+                            <p>Gußhausstraße 20</p>
+                            <p>
+                              <span class="tag bg-primary label-pill">28</span>
+                              <span>members</span>
+                            </p>
+                          </div>
+
+                          <div class="col-xl-6">
+                            <img src="img/groups/group_02.jpg" class="img-fluid z-depth-2">
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- Group item -->
+                  <div class="view hm-zoom">
+                    <a href="" data-toggle="modal" data-target="#myModal">
+                      <div class="list-group-item">
+                        <div class="row">
+
+                          <div class="col-xl-6">
+                            <h3>Apfelgroup</h3>
+                            <p>Apfelgasse 3</p>
+                            <p>
+                              <span class="tag bg-primary label-pill">9</span>
+                              <span>members</span>
+                            </p>
+                          </div>
+
+                          <div class="col-xl-6">
+                            <img src="img/groups/group_03.jpg" class="img-fluid z-depth-2">
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+          </div>
+        </div>
+
+        <!-- Create Group -->
+        <div class="col-md-4">
+          <div class="card">
+              <h3 class="card-header special-color-dark white-text">Create Group</h3>
+              <div class="card-block">
+
+                <!--GroupName-->
+                <div class="md-form">
+                    <i class="fa fa-group prefix"></i>
+                    <input type="text" id="regname" class="form-control">
+                    <label for="regname">Group Name</label>
+                </div>
+
+                <!--Address-->
+                <div class="md-form">
+                    <i class="fa fa-home prefix"></i>
+                    <input type="text" id="regname" class="form-control">
+                    <label for="regname">Address</label>
+                </div>
+
+                <!--Image-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <i class="fa fa-image fa-2x"></i>
+                    <a class="btn btn-primary">Add image</a>
+                  </div>
+                </div>
+
+                <hr class="my-2">
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <a class="btn btn-primary pull-right" href="main.html">Create</a>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Join Group</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">Do you really want to join this group?</div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-elegant" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="main.html">Join</a>
+                </div>
+            </div>
+            <!--/.Content-->
         </div>
     </div>
+    <!-- /.Live preview-->
 
     <!-- /Start your project here-->
 
+    <!-- COPY OF Footer-->
+    <footer class="page-footer special-color-dark center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-6">
+                    <h5 class="title">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <h5 class="title">Links</h5>
+                    <ul>
+                        <li><a href="#!">Terms</a></li>
+                        <li><a href="#!">Help</a></li>
+                        <li><a href="#!">About</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2016 Copyright: <a href="main.html"> FoodShare.com </a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
 
     <!-- SCRIPTS -->
 

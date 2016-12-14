@@ -7,6 +7,7 @@
 .top17 { margin-top:17px; }
 .top30 { margin-top:30px; }
 .top50 { margin-top:50px; }
+.top100 { margin-top:100px; }
 
 .md-form .prefix {
   top: .5rem;
@@ -36,3 +37,9 @@
     margin-left: 75%;
 }
 
+.card .force-rounded {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

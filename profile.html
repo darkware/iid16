@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Material Design Bootstrap</title>
+    <title>FoodShare | Profile</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -25,17 +25,190 @@
 
 <body>
 
+    <!-- COPY OF Navbar-->
+    <nav class="navbar navbar-fixed-top navbar-light white">
+
+        <!--Navbar Brand-->
+        <a href="main.html" class="navbar-brand">FoodShare</a>
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+
+                <!--Search form-->
+                <form class="form-inline float-xs-left" action="search.html">
+                  <input type="search" class="form-control" placeholder="Search...">
+                    <!--<input class="form-control" type="text" placeholder="Search...">
+                    <input class="form-control fa fa-search" type="submit" value="">-->
+                    <!--<button class="btn btn-primary btn-sm" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>-->
+                </form>
+
+                <!--Links-->
+                <ul class="nav navbar-nav navbar-right float-xs-right">
+                    <li class="nav-item">
+                        <a href="messages.html" class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
+                    </li>
+                    <li class="nav-item btn-group">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <a href="profile.html" class="dropdown-item"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                            <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
 
     <!-- Start your project here-->
 
-    <div style="height: 100vh">
-        <div class="flex-center">
-            <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
+    <div class="container-fluid top100">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <!-- Group -->
+            <div class="card">
+                <h3 class="card-header special-color-dark white-text">Profile</h3>
+                <div class="card-block">
+
+                    <div class="md-form">
+                      <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                          <div class="text-xs-center">
+                            <img src="img/avatars/avatar_john_doe.jpg" class="img-fluid force-rounded z-depth-2">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4 offset-md-4 text-xs-center top5">
+                          <a class="btn btn-primary">Choose image</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Name-->
+                    <div class="md-form">
+                        <i class="fa fa-user prefix"></i>
+                        <input type="text" id="regname" class="form-control" value="John Doe">
+                        <label for="regname">Name</label>
+                    </div>
+
+                    <!--Address-->
+                    <div class="md-form">
+                        <i class="fa fa-home prefix"></i>
+                        <input type="text" id="regname" class="form-control" value="Favoritenstraße 7 1040 Vienna">
+                        <label for="regname">Address</label>
+                    </div>
+
+                    <!--Email validation-->
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="email" id="regmail" class="form-control" value="johndoe2@gmail.com">
+                        <label for="regmail">Email</label>
+                    </div>
+
+                    <!--Password validation-->
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix"></i>
+                        <input type="password" id="regpass1" class="form-control">
+                        <label for="regpass1">New Password</label>
+                    </div>
+                    <!--Password validation-->
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix"></i>
+                        <input type="password" id="regpass2" class="form-control validate">
+                        <label for="regpass2">Confirm Password</label>
+                    </div>
+
+                    <a class="btn btn-primary pull-right" href="profile.html">Save</a>
+                </div>
+            </div>
+
+            <!-- Group -->
+            <div class="card">
+              <h3 class="card-header special-color-dark white-text top30">Group</h3>
+              <div class="card-block">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/groups/group_01.jpg" class="img-fluid z-depth-2">
+                  </div>
+
+                  <div class="col-md-6">
+                    <h3>BestFood</h3>
+                    <p>Paniglgasse 5</p>
+                    <span class="tag bg-primary label-pill">14</span>
+                    <span>members</span>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <a class="btn btn-primary pull-right" href="nogroup.html">Leave</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
         </div>
+      </div>
     </div>
 
     <!-- /Start your project here-->
 
+    <!-- COPY OF Footer-->
+    <footer class="page-footer special-color-dark center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-6">
+                    <h5 class="title">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <h5 class="title">Links</h5>
+                    <ul>
+                        <li><a href="#!">Terms</a></li>
+                        <li><a href="#!">Help</a></li>
+                        <li><a href="#!">About</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2016 Copyright: <a href="main.html"> FoodShare.com </a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
 
     <!-- SCRIPTS -->
 
