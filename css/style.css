@@ -5,3 +5,27 @@
 .top15 { margin-top:15px; }
 .top17 { margin-top:17px; }
 .top30 { margin-top:30px; }
+
+.btn-circle.btn-lg-main {
+    width: 55px;
+    height: 55px;
+    padding: 0px 0px;
+    font-size: 15px;
+    border-radius: 55px;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+}
+
+.btn-circle.btn-lg-card {
+    width: 45px;
+    height: 45px;
+    padding: 0px 0px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 45px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 70%;
+}
