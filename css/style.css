@@ -57,3 +57,8 @@
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
+:root {
+  --primary-color: #45526E;
+  --primary-color-hover: #4f5e7e;
+}
