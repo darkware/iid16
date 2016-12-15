@@ -23,13 +23,14 @@
 }
 
 .btn-circle.btn-lg-main {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 0px 0px;
     font-size: 15px;
-    border-radius: 30px;
+    border-radius: 40px;
     position: absolute;
-    left: -15px;
+    left: 0px;
+    top: 15px;
 }
 
 .btn-circle.btn-lg-card {
