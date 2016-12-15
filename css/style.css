@@ -71,6 +71,6 @@
   --primary-color-hover: #4f5e7e;
 }
 
-.icon-color {
+.primary-fg {
   color: var(--primary-color);
 }
