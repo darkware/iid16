@@ -25,11 +25,19 @@
 
 <body>
 
+    <!--<div style="position: fixed; z-value: -1000; top: 0; width: 100vw; max-width: 100vw; height: auto;">
+        <video autoplay loop class="splash-video" poster="http://hooli.xyz/assets/splash-poster.jpg">
+                    <source src="http://hooli.xyz/assets/videos/splash.webm" type="video/webm">
+                    <source src="http://hooli.xyz/assets/videos/splash.mp4" type="video/mp4">
+                </video>
+    </div>-->
+
     <!-- Start your project here-->
 
-    <div class="containter-fluid top30">
+<div class="food-bg">
+    <div class="container-fluid ptop30">
         <div class="col-md-4">
-            <h1 class="title" style="margin-bottom: 15px;"><b><i class="fa fa-share" aria-hidden="true"></i> FoodShare</b></h1>
+            <h1 class="title" style="margin-bottom: 15px;"><b><i class="fa fa-share primary-fg" aria-hidden="true"></i> FoodShare</b></h1>
         </div>
         <div class="col-md-8">
             <form class="form-inline float-md-right">
@@ -55,72 +63,75 @@
     </div>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">
-            <p class="lead">Share food with your neighbours</p>
-            <hr class="my-2">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" role="button">Learn more</a>
-            </p>
-        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <!--<p class="lead">Share food with your neighbours</p>
+                <hr class="my-2">-->
+                <p>The average European wastes about 90kg of food per year. By sharing food you would throw away with your neighbours we can reduce this amount drastically.</p>
+                <div class="text-xs-center">
+                    <img src="http://images.huffingtonpost.com/2015-12-23-1450895141-5774790-food02.jpg" class="img-fluid z-depth-2">
+                    <br />
+                    <h4>Join now and help to make this World a better place!</h4>
+                </div>
+                
+            </div>
 
-        <div class="col-md-6">
+            <div class="col-md-6">
 
-            <div class="card">
-                <h3 class="card-header special-color-dark white-text">Sign Up</h3>
-                <div class="card-block">
+                <div class="card">
+                    <h3 class="card-header special-color-dark white-text">Sign Up</h3>
+                    <div class="card-block">
 
-                    <!--Name-->
-                    <div class="md-form top7">
-                        <i class="fa fa-user prefix"></i>
-                        <input type="text" id="regname" class="form-control">
-                        <label for="regname">Name</label>
-                    </div>
+                        <!--Name-->
+                        <div class="md-form top7">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" id="regname" class="form-control">
+                            <label for="regname">Name</label>
+                        </div>
 
-                    <!--Address-->
-                    <div class="md-form top7">
-                        <i class="fa fa-home prefix"></i>
-                        <input type="text" id="regaddress" class="form-control">
-                        <label for="regaddress">Address</label>
-                    </div>
+                        <!--Address-->
+                        <div class="md-form top7">
+                            <i class="fa fa-home prefix"></i>
+                            <input type="text" id="regaddress" class="form-control">
+                            <label for="regaddress">Address</label>
+                        </div>
 
-                    <!--Email validation-->
-                    <div class="md-form">
-                        <i class="fa fa-envelope prefix"></i>
-                        <input type="email" id="regmail" class="form-control">
-                        <label for="regmail">Email</label>
-                    </div>
+                        <!--Email validation-->
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix"></i>
+                            <input type="email" id="regmail" class="form-control">
+                            <label for="regmail">Email</label>
+                        </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!--Password validation-->
-                            <div class="md-form form-group top7">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="regpass1" class="form-control">
-                                <label for="regpass1">Password</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--Password validation-->
+                                <div class="md-form form-group top7">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="regpass1" class="form-control">
+                                    <label for="regpass1">Password</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!--Password validation-->
+                                <div class="md-form form-group top7">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="regpass2" class="form-control">
+                                    <label for="regpass2">Confirm Password</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <!--Password validation-->
-                            <div class="md-form form-group top7">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="regpass2" class="form-control">
-                                <label for="regpass2">Confirm Password</label>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="text-xs-center">
-                        <a class="btn btn-primary btn-lg btn-block" href="nogroup.html">Sign Up</a>
+                        <div class="text-xs-center">
+                            <a class="btn btn-primary btn-lg btn-block" href="nogroup.html">Sign Up</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
 
     </div>
-
+<div>
     <!-- /Start your project here-->
 
 
@@ -133,8 +144,9 @@
 
                 <!--First column-->
                 <div class="col-md-6">
-                    <h5 class="title">FoodShare.com</h5>
-                    <p>The place to share food.</p>
+                    <h5 class="title">FoodShare</h5>
+                    <p>Making the world a better place</p>
+                    <p>Made with <i style="color: red;" class="fa fa-heart" aria-hidden="true"></i> in Vienna</p>
                 </div>
                 <!--/.First column-->
 
@@ -155,7 +167,7 @@
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2016 Copyright: <a href="main.html"> FoodShare.com </a>
+                © 2016 Copyright: <a href="main.html"> FoodShare </a>
             </div>
         </div>
         <!--/.Copyright-->

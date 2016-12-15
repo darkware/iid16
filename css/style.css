@@ -9,19 +9,27 @@
 .top50 { margin-top:50px; }
 .top100 { margin-top:100px; }
 
+.ptop5 { padding-top:5px; }
+.ptop7 { padding-top:7px; }
+.ptop10 { padding-top:10px; }
+.ptop15 { padding-top:15px; }
+.ptop17 { padding-top:17px; }
+.ptop30 { padding-top:30px; }
+.ptop50 { padding-top:50px; }
+.ptop100 { padding-top:100px; }
+
 .md-form .prefix {
   top: .5rem;
 }
 
 .btn-circle.btn-lg-main {
-    width: 55px;
-    height: 55px;
+    width: 30px;
+    height: 30px;
     padding: 0px 0px;
     font-size: 15px;
-    border-radius: 55px;
-    display: inline-block;
-    position: relative;
-    top: -12px;
+    border-radius: 30px;
+    position: absolute;
+    left: -15px;
 }
 
 .btn-circle.btn-lg-card {
@@ -61,4 +69,8 @@
 :root {
   --primary-color: #45526E;
   --primary-color-hover: #4f5e7e;
+}
+
+.primary-fg {
+  color: var(--primary-color);
 }
