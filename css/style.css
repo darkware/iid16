@@ -71,3 +71,6 @@
   --primary-color-hover: #4f5e7e;
 }
 
+.icon-color {
+  color: var(--primary-color);
+}
