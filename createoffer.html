@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>FoodShare</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="cssalt/mdb.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <form>
+        <div class="container-fluid" style="margin-top:5vh;">
+            <div class="card">
+                <div class="card-block">
+
+                    <!--Header-->
+                    <div class="form-header darken-4" style="background:#45526E;">
+                        <h3 id="dialogTitle">Create Offer</h3>
+                    </div>
+
+
+                    <div class="card-block">
+                        <ul class="nav nav-tabs md-pills pills-ins" role="tablist">
+                            <li class="nav-item waves-effect waves-light" style="width: 49%">
+                                <a class="nav-link active" data-toggle="tab" href="#" onclick="javascript:offer_pressed();" role="tab">Offer</a>
+                            </li>
+                            <li class="nav-item waves-effect waves-light" style="width: 50%">
+                                <a class="nav-link" data-toggle="tab" href="#" onclick="javascript:request_pressed();" role="tab">Request</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="md-form">
+                        <!--<i class="fa fa-cutlery prefix"></i>-->
+                        <input type="text" id="form3" class="form-control">
+                        <label for="form3">Name</label>
+                    </div>
+                </div>
+
+                <div class="card-block">
+                    <div class="md-form">
+                        <!--Blue select-->
+                        <div class="col-md-2" style="padding-left:0;">
+                            <input type="text" id="form4" class="form-control">
+                            <label for="form4">Amount</label>
+                        </div>
+                        <div class="col-md-10" style="padding-top:0.6vh;">
+                            <select id="selectForm" class="mdb-select">
+                    <option value="1">Pieces</option>
+                    <option value="2">Kilogramm</option>
+                    <option value="3">Gramm</option>
+                    <option value="4">Liter</option>
+                </select>
+                            <!--/Blue select-->
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!--Basic textarea-->
+                <!--Textarea with icon prefix-->
+
+                <div class="card-block">
+                    <div class="md-form">
+                        <!--<i class="fa fa-pencil prefix"></i>-->
+                        <textarea id="textarea1" class="md-textarea" length="120"></textarea>
+                        <label for="textarea1">Description</label>
+                    </div>
+                </div>
+
+
+                <div class="card-block">
+                    <div class="md-form">
+                        <div class="file-field">
+                            <div class="btn btn-primary btn-sm">
+                                <span>Choose image</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload your image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-block pill-ins">
+                    <div class="col-md-2"></div>
+                    <button class="btn btn-blue-grey col-md-4">Cancel</button>
+                    <button class="btn btn-primary col-md-4">Save</button>
+                    <div class="col-md-2"></div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <!-- /Start your project here-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="jsalt/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="jsalt/mdb.min.js"></script>
+
+    <script type="text/javascript">
+        // Material Select Initialization
+        $(document).ready(function() {
+            $('.mdb-select').material_select();
+        });
+
+        function offer_pressed() {
+            $('#dialogTitle').text("Create Offer");
+        }
+
+
+        function request_pressed() {
+            $('#dialogTitle').text("Create Request");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
