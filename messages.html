@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Material Design Bootstrap</title>
+    <title>FoodShare: Messages</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -15,10 +15,13 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="cssalt/mdb.css" rel="stylesheet">
+
 
     <!-- Your custom styles (optional) -->
+    <link href="css/chat.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -28,10 +31,248 @@
 
     <!-- Start your project here-->
 
-    <div style="height: 100vh">
-        <div class="flex-center">
-            <h1 class="animated fadeIn">Material Design for Bootstrap</h1>
+    <div>
+        <!--Navbar-->
+        <nav class="navbar navbar-fixed-top navbar-light white">
+
+            <!--Navbar Brand-->
+            <a href="main.html" class="navbar-brand"><b><i class="fa fa-share" aria-hidden="true"></i> FoodShare</b></a>
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+              <i class="fa fa-bars"></i>
+          </button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+
+                    <!--Search form-->
+                    <form class="form-inline float-xs-left" action="search.html">
+                        <input type="search" class="form-control" placeholder="Search...">
+                        <!--<input class="form-control" type="text" placeholder="Search...">
+                      <input class="form-control fa fa-search" type="submit" value="">-->
+                        <!--<button class="btn btn-primary btn-sm" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>-->
+                    </form>
+
+                    <!--Links-->
+                    <ul class="nav navbar-nav navbar-right float-xs-right">
+                        <li class="nav-item">
+                            <a href="messages.html" class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Messages</a>
+                        </li>
+                        <li class="nav-item btn-group">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> User</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <a href="profile.html" class="dropdown-item"><i class="fa fa-user" aria-hidden="true"></i> Profile</a>
+                                <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!--/.Collapse content-->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+        <div class="chatwrapper">
+            <div class="chatcontainer">
+                <div class="left">
+                    <div class="top">
+                        <input type="search" class="form-control" placeholder="Search...">
+                        <a href="javascript:;" class="search"></a>
+                    </div>
+                    <ul class="people">
+                        <li class="person" data-chat="person1">
+                            <img src="http://s13.postimg.org/ih41k9tqr/img1.jpg" alt="" />
+                            <span class="name">Thomas Bangalter</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">I was wondering...</span>
+                        </li>
+                        <li class="person" data-chat="person2">
+                            <img src="http://s3.postimg.org/yf86x7z1r/img2.jpg" alt="" />
+                            <span class="name">Dog Woofson</span>
+                            <span class="time">1:44 PM</span>
+                            <span class="preview">Sigh...</span>
+                        </li>
+                        <li class="person" data-chat="person3">
+                            <img src="https://pbs.twimg.com/profile_images/451027744361422849/f5KCfGHa_400x400.jpeg" alt="" />
+                            <span class="name">Garfield</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Has sent you a request...</span>
+                        </li>
+                        <li class="person" data-chat="person4">
+                            <img src="https://pbs.twimg.com/profile_images/711324371772694528/PKf_PJtk.jpg" alt="" />
+                            <span class="name">Boaty McBoatFace</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">You have sent a request...</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="top"><span>To: <span class="name">Dog Woofson</span></span>
+                    </div>
+                    <div class="chat" data-chat="person1">
+                        <div class="conversation-start">
+                            <span>Today, 6:48 AM</span>
+                        </div>
+                        <div class="bubble you">
+                            Hello,
+                        </div>
+                        <div class="bubble you">
+                            it's me.
+                        </div>
+                        <div class="bubble you">
+                            I was wondering...
+                        </div>
+                        <div class="bubble you">
+                            If you have some bananas left...?
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person2">
+                        <div class="conversation-start">
+                            <span>Today, 5:38 PM</span>
+                        </div>
+                        <div class="bubble you">
+                            Hello, can you hear me?
+                        </div>
+                        <div class="bubble you">
+                            I just wanted to ask you to keep the bones after eating!
+                        </div>
+                        <div class="bubble me">
+                            It's a weird place to talk but okay, sure!
+                        </div>
+                        <div class="bubble you">
+                            Are you serious?
+                        </div>
+                        <div class="bubble you">
+                            Thank you!!!
+                        </div>
+                        <div class="bubble me">
+                            Sigh...
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person3">
+                        <div class="conversation-start">
+                            <span>Today, 3:38 AM</span>
+                        </div>
+                        <div class="bubble you">
+                            Hey human!
+                        </div>
+                        <div class="bubble you">
+                          <div class="card" style="margin:10px 0px; background:none; width:15vw;">
+                              <img class="img-fluid" src="img/dummies/las.jpg" alt="">
+
+                              <div class="card-block">
+                                  <h4 class="h4-responsive" style="font-size:21px">Request: Lasagne</h4>
+                                  <p style="font-size:13px">Vegetarien lasagne</p>
+
+                                  <div style="margin-top: 10%;">
+                                      <h6 >2 pcs.</h6>
+                                          <button type="button" class="btn-floating btn-large orange" style="float: right; margin:0; border-width: 0px;"><i class="fa fa-check"></i></button>
+                                  </div>
+                              </div>
+
+                          </div>
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person4">
+                        <div class="conversation-start">
+                            <span>Yesterday, 4:20 PM</span>
+                        </div>
+                        <div class="bubble me">
+                            Hey McBoatFace!
+                        </div>
+                        <div class="bubble me">
+                            Sorry to disturb you but...
+                        </div>
+                        <div class="bubble you">
+                            Hey, what's up?
+                        </div>
+                        <div class="bubble me">
+                          <div class="card" style="margin:10px 0px; background-color:none; width:15vw;">
+                            <img class="img-fluid" src="img/dummies/schnaps.jpg" alt="">
+
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title" style="font-size:21px">Request: Booze</h4>
+                                <!--Text-->
+                                <p style="font-size:13px"></p>
+
+                                <div style="margin-top: 10%;">
+                                    <h6>2 pcs.</h6>
+                                </div>
+                                          <button type="button" class="btn-floating btn-large orange" style="float: right; margin:0; border-width: 0px;"><i class="fa fa-check"></i></button>
+                                  </div>
+                              </div>
+
+                          </div>
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person5">
+                        <div class="conversation-start">
+                            <span>Today, 6:28 AM</span>
+                        </div>
+                        <div class="bubble you">
+                            Wasup
+                        </div>
+                        <div class="bubble you">
+                            Wasup
+                        </div>
+                        <div class="bubble you">
+                            Wasup for the third time like is <br />you bling bitch
+                        </div>
+
+                    </div>
+                    <div class="chat" data-chat="person6">
+                        <div class="conversation-start">
+                            <span>Monday, 1:27 PM</span>
+                        </div>
+                        <div class="bubble you">
+                            So, how's your new phone?
+                        </div>
+                        <div class="bubble you">
+                            You finally have a smartphone :D
+                        </div>
+                        <div class="bubble me">
+                            Drake?
+                        </div>
+                        <div class="bubble me">
+                            Why aren't you answering?
+                        </div>
+                        <div class="bubble you">
+                            howdoyoudoaspace
+                        </div>
+                    </div>
+                    <div class="write">
+                        <a href="javascript:;" class="write-link attach"></a>
+                        <input type="text" />
+                        <a href="javascript:;" class="write-link smiley"></a>
+                        <a href="javascript:;" class="write-link send"></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/tether.min.js"></script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script src="js/index.js"></script>
+
     </div>
 
     <!-- /Start your project here-->
@@ -49,7 +290,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="jsalt/mdb.min.js"></script>
 
 
 </body>
