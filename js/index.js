@@ -1,5 +1,5 @@
-$('.chat[data-chat=person2]').addClass('active-chat');
-$('.person[data-chat=person2]').addClass('active');
+$('.chat[data-chat=person3]').addClass('active-chat');
+$('.person[data-chat=person3]').addClass('active');
 
 $('.left .person').mousedown(function(){
     if ($(this).hasClass('.active')) {
