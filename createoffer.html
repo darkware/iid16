@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body style="width:30%;">
 
     <!-- Start your project here-->
     <form>
@@ -87,29 +87,32 @@
                     </div>
                 </div>
 
-                <div class="card-block container">
-                        <div class="btn-group" data-toggle="buttons" id="categoryButtons">
-                            <label class="btn btn-primary active">
-                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Fruits
-                            </label>
-                            <label class="btn btn-primary">
-                              <input type="radio" name="options" id="option2" autocomplete="off"> Veggies
-                            </label>
-                            <label class="btn btn-primary">
-                              <input type="radio" name="options" id="option3" autocomplete="off"> Spices
-                            </label>
-                            <label class="btn btn-primary">
-                              <input type="radio" name="options" id="option3" autocomplete="off"> Drinks
-                            </label>
-                            <label class="btn btn-primary">
-                              <input type="radio" name="options" id="option3" autocomplete="off"> Others
-                            </label>
+                <div class="card-block" style="width:100%">
+                        <div class="md-form">
+                            <label for="categoryButtons" class="label" style="font-size:1rem;position:relative;">Category</label>
                         </div>
+                            <div class="btn-group" data-toggle="buttons" id="categoryButtons" style="width:100%">
+                                <label class="btn btn-primary active" style="width:20%">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked style="width:100%"> Fruits
+                            </label>
+                                <label class="btn btn-primary" style="width:20%">
+                              <input type="radio" name="options" id="option2" autocomplete="off" style="width:100%"> Veggies
+                            </label>
+                                <label class="btn btn-primary" style="width:20%">
+                              <input type="radio" name="options" id="option3" autocomplete="off" style="width:100%"> Spices
+                            </label>
+                                <label class="btn btn-primary" style="width:20%">
+                              <input type="radio" name="options" id="option3" autocomplete="off" style="width:100%"> Drinks
+                            </label>
+                                <label class="btn btn-primary" style="width:20%">
+                              <input type="radio" name="options" id="option3" autocomplete="off" style="width:100%"> Others
+                            </label>
+                            </div>
 
                 </div>
 
 
-                <div class="card-block">
+                <div class="card-block" id="imageChoser">
                     <div class="md-form">
                         <div class="file-field">
                             <div class="btn btn-primary btn-sm">
@@ -158,11 +161,14 @@
 
         function offer_pressed() {
             $('#dialogTitle').text("Create Offer");
+            $('#imageChoser').css("display","initial");
         }
 
 
         function request_pressed() {
             $('#dialogTitle').text("Create Request");
+            $('#imageChoser').css("display","none");
+
         }
     </script>
 
