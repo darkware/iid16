@@ -80,16 +80,16 @@
     <div class="container-fluid" style="margin-top: 50px;">
 
         <div class="col-md-9">
-
             <button type="button" class="btn btn-mdb btn-circle btn-lg-main" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></button>
+
             <!-- Tabs -->
             <div style="margin-left: 10px;">
                 <ul class="nav nav-tabs md-pills pills-ins" role="tablist">
                     <li class="nav-item" style="width: 49%">
-                        <a class="nav-link " href="main.html" role="tab">Offers</a>
+                        <a class="nav-link active" href="main.html" role="tab">Offers</a>
                     </li>
                     <li class="nav-item" style="width: 50%">
-                        <a class="nav-link active" href="main_requests.html" role="tab">Requests</a>
+                        <a class="nav-link " href="main_requests.html" role="tab">Requests</a>
                     </li>
                 </ul>
             </div>
@@ -97,32 +97,32 @@
 
             <div class="row" data-toggle="buttons" style="margin: 10px">
 
-                <div class="col-md-2 btn-group">
-                    <label class="btn btn-primary btn-sm btn-mdb active" style="width: 100%; border-radius: 40px;">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked>All</label>
+                <div class="col-md-2 btn-group" onclick="window.location='main.html';">
+                    <label class="btn btn-primary btn-sm btn-mdb " style="width: 100%; border-radius: 40px;">
+        <input type="radio" name="options" autocomplete="off" >All</label>
                 </div>
 
-                <div class="col-md-2 btn-group">
+                <div class="col-md-2 btn-group" onclick="window.location='main_fruits.html';">
                     <label class="btn btn-primary btn-sm btn-mdb" style="width: 100%; border-radius: 40px;">
         <input type="radio" name="options" id="option2" autocomplete="off">Fruits</label>
                 </div>
 
-                <div class="col-md-2 btn-group">
+                <div class="col-md-2 btn-group" onclick="window.location='main_veggies.html';">
                     <label class="btn btn-primary btn-sm btn-mdb" style="width: 100%; border-radius: 40px;">
         <input type="radio" name="options" id="option2" autocomplete="off">Veggies</label>
                 </div>
 
-                <div class="col-md-2 btn-group">
-                    <label class="btn btn-primary btn-sm btn-mdb" style="width: 100%; border-radius: 40px;">
-    <input type="radio" name="options" id="option3" autocomplete="off">Spices</label>
+                <div class="col-md-2 btn-group" onclick="window.location='main_spices.html';">
+                    <label class="btn btn-primary btn-sm btn-mdb active" style="width: 100%; border-radius: 40px;">
+    <input type="radio" name="options" id="option3" autocomplete="off" checked>Spices</label>
                 </div>
 
-                <div class="col-md-2 btn-group">
+                <div class="col-md-2 btn-group" onclick="window.location='main_drinks.html';">
                     <label class="btn btn-primary btn-sm btn-mdb" style="width: 100%; border-radius: 40px;">
     <input type="radio" name="options" id="option3" autocomplete="off">Drinks</label>
                 </div>
 
-                <div class="col-md-2 btn-group">
+                <div class="col-md-2 btn-group" onclick="window.location='main_others.html';">
                     <label class="btn btn-primary btn-sm btn-mdb" style="width: 100%; border-radius: 40px;">
     <input type="radio" name="options" id="option3" autocomplete="off">Others</label>
                 </div>
@@ -136,227 +136,29 @@
             <div style="height: 770px;  overflow-y: scroll; margin:6px -10px">
                 <!-- first row -->
                 <div class="row" style="margin-right: 0px; margin-left: 0px;">
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <!--Card content-->
-                            <div class="card-block">
-                                <!--Title-->
-                                <h4 class="card-title" style="font-size:21px">Apples</h4>
-                                <!--Text-->
-                                <p style="font-size:13px">Hey I am looking for some apples.</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>3 pcs.</h6>
-                                </div>
-                            </div>
-                            <!--/.Card content-->
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
 
 
-                            <div class="card-block">
-                                <!--Title-->
-                                <h4 class="card-title" style="font-size:21px">Booze</h4>
-                                <!--Text-->
-                                <p style="font-size:13px">I am lookign for boooooooze</p>
+                  <div class="col-md-3">
+                      <div class="card" style="margin:10px 0px">
+                          <button type="button" class="btn btn-orange btn-circle btn-lg-card"><i class="fa fa-paper-plane"></i></button>
+                          <img class="img-fluid" src="img/dummies/spmix.jpg" alt="">
 
-                                <div style="margin-top: 10%;">
-                                    <h6>2 pcs.</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                          <div class="card-block">
+                              <h4 class="h4-responsive" style="font-size:21px">Mixed Spices</h4>
+                              <p style="font-size:13px">We don't need the mixed spices anymore. </p>
 
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
+                              <div style="margin-top: 10%;">
+                                  <h6>6 pcs.</h6>
+                              </div>
+                          </div>
 
-                            <div class="card-block">
-                                <h4 class="h4-responsive" style="font-size:21px">Salt</h4>
-                                <p style="font-size:13px">I need some salt for my egg!</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>1 pcs.</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <div class="card-block">
-                                <h4 class="h4-responsive" style="font-size:21px">Eggs</h4>
-                                <p style="font-size:13px">I need four eggs for my cake</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>4 pcs.</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                      </div>
+                  </div>
                 </div>
                 <!-- end first row -->
 
-                <div class="row" style="margin-right: 0px; margin-left: 0px;">
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
 
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <!--Card content-->
-                            <div class="card-block">
-                                <!--Title-->
-                                <h4 class="card-title" style="font-size:21px">Apples</h4>
-                                <!--Text-->
-                                <p style="font-size:13px">Hey I am looking for some apples.</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>3 pcs.</h6>
-                                </div>
-                            </div>
-                            <!--/.Card content-->
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-
-                            <div class="card-block">
-                                <!--Title-->
-                                <h4 class="card-title" style="font-size:21px">Booze</h4>
-                                <!--Text-->
-                                <p style="font-size:13px">I am lookign for boooooooze</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>2 pcs.</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <div class="card-block">
-                                <h4 class="h4-responsive" style="font-size:21px">Salt</h4>
-                                <p style="font-size:13px">I need some salt for my egg!</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>1 pcs.</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <div class="card-block">
-                                <h4 class="h4-responsive" style="font-size:21px">Eggs</h4>
-                                <p style="font-size:13px">I need four eggs for my cake</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>4 pcs.</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" style="margin-right: 0px; margin-left: 0px;">
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <!--Card content-->
-                            <div class="card-block">
-                                <!--Title-->
-                                <h4 class="card-title" style="font-size:21px">Apples</h4>
-                                <!--Text-->
-                                <p style="font-size:13px">Hey I am looking for some apples.</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>3 pcs.</h6>
-                                </div>
-                            </div>
-                            <!--/.Card content-->
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-
-                            <div class="card-block">
-                                <!--Title-->
-                                <h4 class="card-title" style="font-size:21px">Booze</h4>
-                                <!--Text-->
-                                <p style="font-size:13px">I am lookign for boooooooze</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>2 pcs.</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <div class="card-block">
-                                <h4 class="h4-responsive" style="font-size:21px">Salt</h4>
-                                <p style="font-size:13px">I need some salt for my egg!</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>1 pcs.</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card" style="margin:10px 0px">
-                            <button type="button" class="btn btn-orange btn-circle btn-lg-card-request"><i class="fa fa-paper-plane"></i></button>
-
-                            <div class="card-block">
-                                <h4 class="h4-responsive" style="font-size:21px">Eggs</h4>
-                                <p style="font-size:13px">I need four eggs for my cake</p>
-
-                                <div style="margin-top: 10%;">
-                                    <h6>4 pcs.</h6>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
+                <!-- end second row -->
             </div>
             <!-- end cards -->
 
@@ -375,6 +177,8 @@
                 <i class="fa fa-user-o"></i>
                 <span>4 Members</span>
             </div>
+
+
 
             <hr/>
 
@@ -478,8 +282,6 @@
 
     <!-- /Start your project here-->
 
-
-
     <!--Footer-->
     <footer class="page-footer special-color-dark center-on-small-only">
 
@@ -578,7 +380,7 @@
                         <!--Basic textarea-->
                         <!--Textarea with icon prefix-->
 
-                        <div class="card-block">
+                        <div class="card-block" style="padding-top:0; padding-bottom:0;">
                             <div class="md-form">
                                 <!--<i class="fa fa-pencil prefix"></i>-->
                                 <textarea id="textarea1" class="md-textarea" length="120"></textarea>
@@ -586,7 +388,7 @@
                             </div>
                         </div>
 
-                        <div class="card-block" style="width:100%">
+                        <div class="card-block" style="width:100%; padding-top:0;">
                             <div class="md-form">
                                 <label for="categoryButtons" class="label" style="font-size:1rem;position:relative;">Category</label>
                             </div>
@@ -640,6 +442,7 @@
     </div>
     <!-- /.Modal-->
 
+
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
@@ -662,7 +465,7 @@
 
         function offer_pressed() {
             $('#dialogTitle').text("Create Offer");
-            $('#imageChoser').css("display", "initial");
+            $('#imageChoser').css("display", "inherit");
         }
 
 
@@ -672,6 +475,7 @@
 
         }
     </script>
+
 
 </body>
 
